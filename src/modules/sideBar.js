@@ -23,7 +23,7 @@ const loadSideBar = function () {
     sideBarContainer.classList.add('sideBarContainer');
 
     const inboxContainer = document.createElement('button');
-    inboxContainer.classList.add('inboxContainer');
+    inboxContainer.classList.add('inboxContainer','activePage');
     const inboxIcon = document.createElement('i');
     inboxIcon.classList.add('fas', 'fa-inbox');
     inboxIcon.setAttribute('id','inboxIcon')
@@ -93,7 +93,25 @@ const loadSideBar = function () {
     projectContainer.appendChild(addProjectContainer);
     sideBarContainer.appendChild(projectContainer)
 
+
+    inboxContainer.addEventListener("click", () => {
+        inboxContainer.classList.add("activePage")
+        todayContainer.classList.remove("activePage");
+        weekContainer.classList.remove("activePage");
+    })
     
+
+    todayContainer.addEventListener("click", () => {
+        todayContainer.classList.add("activePage")
+        inboxContainer.classList.remove("activePage");
+        weekContainer.classList.remove("activePage");
+    })
+
+    weekContainer.addEventListener("click", () => {
+        weekContainer.classList.add("activePage")
+        todayContainer.classList.remove("activePage");
+        inboxContainer.classList.remove("activePage");
+    })
 }
 
 export default loadSideBar;

@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+*{
+    color: black;
+}
+
 .main-title{
     font-family: 'titleFont';
     font-size: 5rem;
@@ -93,6 +97,11 @@
 }
 
 
+.activePage{
+    background-color: #CCCCCC;
+}
+
+
 @media (max-width: 650px){
     #hamBurgerIcon{
         font-size: 1.5rem;
@@ -116,6 +125,7 @@
         padding-bottom: 20px;
         color: black;
         font-weight: 600;
+        align-items: center;
     }
 
     .nav-container{
@@ -123,7 +133,8 @@
         height: 40%;
         align-items: start;
     }
-    .inboxText,.todayText,.weekText{
+    .inboxText,.todayText,.weekText,#inboxIcon,#todayIcon,#weekIcon{
+        padding-top: 25px;
         font-size: 1.2rem;
         font-weight: 600;
     }
@@ -153,6 +164,7 @@
     .active{
         visibility: visible;
     }
+
 
     
 }
