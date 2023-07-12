@@ -4,7 +4,8 @@ const loadSideBar = function () {
     const body = document.querySelector('body');
 
     const headerContainer = document.createElement('div');
-
+    const contentContainer = document.createElement('div');
+    contentContainer.classList.add('contentContainer');
     const title = document.createElement('div');
     title.textContent = 'Todo List'
     title.classList.add('main-title');
@@ -112,6 +113,8 @@ const loadSideBar = function () {
         todayContainer.classList.remove("activePage");
         inboxContainer.classList.remove("activePage");
     })
+    body.appendChild(contentContainer);
+    contentContainer.appendChild(sideBarContainer);
 }
 
 export default loadSideBar;

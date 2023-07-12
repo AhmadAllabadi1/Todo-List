@@ -102,6 +102,10 @@
 }
 
 
+.contentContainer{
+    display: flex;
+}
+
 @media (max-width: 650px){
     #hamBurgerIcon{
         font-size: 1.5rem;
@@ -115,7 +119,7 @@
     }
 
     .sideBarContainer{
-        visibility: hidden;
+        display: none;
         width: 100%;
         height: auto;
         align-items: center;
@@ -162,9 +166,12 @@
     }
 
     .active{
-        visibility: visible;
+        display: inline;
     }
 
+    .contentContainer{
+        flex-direction: column;
+    }
 
     
 }
