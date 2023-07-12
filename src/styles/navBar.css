@@ -63,7 +63,6 @@
 
 #inboxIcon,#todayIcon,#weekIcon{
     color: black;
-    font-weight: 600;
     font-size: 1.2rem;
 }
 
@@ -71,7 +70,6 @@
     font-size: 1.2rem;
     padding-left: 5%;
     color: black;
-    font-weight: 600;
 }
 
 @media only screen and (max-width: 408px){
@@ -93,6 +91,8 @@
     }
     .inboxContainer,.todayContainer,.weekContainer{
         width: 100%;
+        color: black;
+        font-weight: 600;
     }
 
     .nav-container{
@@ -102,6 +102,7 @@
     }
     .inboxText,.todayText,.weekText{
         font-size: 1.2rem;
+        font-weight: 600;
     }
 
     .active{

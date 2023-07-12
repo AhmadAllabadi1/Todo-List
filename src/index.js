@@ -1,5 +1,3 @@
-import loadNavBar from "./modules/navBar";
+import loadSideBar from "./modules/sideBar";
 
-
-
-loadNavBar();
+loadSideBar();
