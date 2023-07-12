@@ -43,6 +43,7 @@
     height: 10%;
     justify-content: space-around;
     padding-top: 5%;
+    padding-left: 8%;
 }
 
 .inboxContainer,.todayContainer,.weekContainer{
@@ -53,7 +54,6 @@
     height: 30%;
     border-radius: 10px;;
     align-items: center;
-    padding-left: 10%;
 }
 
 .inboxContainer:hover,.todayContainer:hover,.weekContainer:hover{
@@ -72,6 +72,17 @@
     color: black;
 }
 
+
+.projectContainer{
+    padding-top: 5%;
+    padding-left: 12%;
+}
+.projectTitle{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
 @media only screen and (max-width: 408px){
     #hamBurgerIcon{
         font-size: 3.5rem;
@@ -81,7 +92,7 @@
     }
 
     .main-title{
-        font-size: 2rem;
+        font-size: 0.8rem;
     }
 
     .sideBarContainer{

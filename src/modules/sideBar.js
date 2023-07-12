@@ -75,10 +75,13 @@ const loadSideBar = function () {
 
     const projectContainer = document.createElement('div');
     projectContainer.classList.add('projectContainer');
-
-
+    const projectTitle = document.createElement('div');
+    projectTitle.classList.add('projectTitle');
+    projectTitle.textContent = 'Projects';
+    projectContainer.appendChild(projectTitle);
+    sideBarContainer.appendChild(projectContainer)
 
     
 }
 
-export default loadNavBar;
+export default loadSideBar;
