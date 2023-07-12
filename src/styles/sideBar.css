@@ -83,7 +83,7 @@
 }
 
 
-@media only screen and (max-width: 408px){
+@media (max-width: 650px){
     #hamBurgerIcon{
         font-size: 1.5rem;
         visibility: visible;
