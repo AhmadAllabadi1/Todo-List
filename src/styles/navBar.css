@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'titleFont';
+    src: url('../fonts/Round\ Butterfly.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.main-title{
+    font-family: 'titleFont';
+    font-size: 5rem;
+    color: white;
+    padding-left: 50px;
+}
+
+#hamBurgerIcon{
+    font-size: 48px;
+    color: white;
+    visibility: hidden;
+    border: none;
+    background: none;
+}
+
+.headerContainer{
+    display: flex;
+    width: 100%;
+    background-color: #333333;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sideBarContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    width: 15vw;
+    height: 80vw;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    justify-content: space-around;
+}
+
+.inboxContainer,.todayContainer,.weekContainer{
+    border: none;
+    background: none;
+    display: flex;
+    width:90%;
+    height: 25%;
+    border-radius: 10px;;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.inboxContainer:hover,.todayContainer:hover,.weekContainer:hover{
+    background-color: #CCCCCC;
+    cursor: pointer;
+}
+
+#inboxIcon,#todayIcon,#weekIcon{
+    font-size: 1.2rem;
+}
+
+.inboxText,.todayText,.weekText{
+    font-size: 1.2rem;
+    padding-left: 5%;
+}
+
+@media (max-width: 408px) {
+    #hamBurgerIcon{
+        font-size: 3.5rem;
+        visibility: visible;
+        padding-right: 10%;
+
+    }
+
+    .main-title{
+        font-size: 4rem;
+    }
+
+    .sideBarContainer{
+        visibility: hidden;
+        width: 100%;
+    }
+
+    .nav-container{
+        height: 50%;
+        align-items: center;
+    }
+    .inboxText,.todayText,.weekText{
+        font-size: 1rem;
+    }
+
+    .active{
+        visibility: visible;
+    }
+}
