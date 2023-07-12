@@ -85,14 +85,14 @@
 
 @media only screen and (max-width: 408px){
     #hamBurgerIcon{
-        font-size: 3.5rem;
+        font-size: 1.5rem;
         visibility: visible;
         padding-right: 10%;
 
     }
 
     .main-title{
-        font-size: 0.8rem;
+        font-size: 1.5rem;
     }
 
     .sideBarContainer{
