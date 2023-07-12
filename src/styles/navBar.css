@@ -40,8 +40,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20%;
+    height: 10%;
     justify-content: space-around;
+    padding-top: 5%;
 }
 
 .inboxContainer,.todayContainer,.weekContainer{
@@ -49,7 +50,7 @@
     background: none;
     display: flex;
     width:90%;
-    height: 25%;
+    height: 30%;
     border-radius: 10px;;
     align-items: center;
     padding-left: 10%;
@@ -61,6 +62,8 @@
 }
 
 #inboxIcon,#todayIcon,#weekIcon{
+    color: black;
+    font-weight: 600;
     font-size: 1.2rem;
 }
 
@@ -68,6 +71,7 @@
     font-size: 1.2rem;
     padding-left: 5%;
     color: black;
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 408px){
@@ -85,14 +89,19 @@
     .sideBarContainer{
         visibility: hidden;
         width: 100%;
+        align-items: center;
+    }
+    .inboxContainer,.todayContainer,.weekContainer{
+        width: 100%;
     }
 
     .nav-container{
-        height: 50%;
-        align-items: center;
+        width: 90%;
+        height: 40%;
+        align-items: start;
     }
     .inboxText,.todayText,.weekText{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .active{
