@@ -79,6 +79,18 @@ const loadSideBar = function () {
     projectTitle.classList.add('projectTitle');
     projectTitle.textContent = 'Projects';
     projectContainer.appendChild(projectTitle);
+
+    const addProjectContainer = document.createElement('button');
+    addProjectContainer.classList.add('addProjectContainer');
+    const addProjectIcon = document.createElement('i');
+    addProjectIcon.classList.add('fas','fa-plus')
+    addProjectIcon.setAttribute('id','addProjectIcon');
+    addProjectContainer.appendChild(addProjectIcon);
+    const addProjectText = document.createElement('div');
+    addProjectText.textContent = 'Add Project';
+    addProjectText.classList.add('addProjectText');
+    addProjectContainer.appendChild(addProjectText);
+    projectContainer.appendChild(addProjectContainer);
     sideBarContainer.appendChild(projectContainer)
 
     
