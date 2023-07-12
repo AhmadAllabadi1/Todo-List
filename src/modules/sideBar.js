@@ -1,6 +1,6 @@
-import '../styles/navBar.css'
+import '../styles/sideBar.css'
 
-const loadNavBar = function () {
+const loadSideBar = function () {
     const body = document.querySelector('body');
 
     const headerContainer = document.createElement('div');
@@ -71,6 +71,13 @@ const loadNavBar = function () {
     hamBurgerIcon.addEventListener('click', () => {
         sideBarContainer.classList.toggle('active');    
     })
+
+
+    const projectContainer = document.createElement('div');
+    projectContainer.classList.add('projectContainer');
+
+
+
     
 }
 
