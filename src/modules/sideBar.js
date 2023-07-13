@@ -92,6 +92,28 @@ const loadSideBar = function () {
     addProjectText.classList.add('addProjectText');
     addProjectContainer.appendChild(addProjectText);
     projectContainer.appendChild(addProjectContainer);
+
+    const form = document.createElement('form');
+    form.id = 'projectNameForm';
+    form.classList.add('notActive');
+    const input = document.createElement('input');
+    input.id = 'projectNameForm';
+    input.type = 'text';
+    form.appendChild(input);
+    const submitFormButtonContainer = document.createElement('div');
+    submitFormButtonContainer.classList.add('submitFormButtonContainer','notActive');
+    const submitProjectNameButton = document.createElement('button');
+    submitProjectNameButton.classList.add('submitProjectNameButton');
+    submitProjectNameButton.textContent = 'Add';
+    const cancelProjectNameButton = document.createElement('button');
+    cancelProjectNameButton.textContent = 'Cancel';
+    cancelProjectNameButton.type = 'Button';
+    cancelProjectNameButton.classList.add('cancelProjectNameButton');
+    submitFormButtonContainer.appendChild(submitProjectNameButton);
+    submitFormButtonContainer.appendChild(cancelProjectNameButton);
+    projectContainer.appendChild(form);
+    projectContainer.appendChild(submitFormButtonContainer);
+
     sideBarContainer.appendChild(projectContainer)
 
 
@@ -113,8 +135,30 @@ const loadSideBar = function () {
         todayContainer.classList.remove("activePage");
         inboxContainer.classList.remove("activePage");
     })
+
     body.appendChild(contentContainer);
     contentContainer.appendChild(sideBarContainer);
+
+
+    addProjectContainer.addEventListener("click", () => {
+        console.log('h')
+        addProjectContainer.classList.toggle('notActive');
+        form.classList.toggle('notActive');
+        submitFormButtonContainer.classList.toggle('notActive');
+    })
+
+
+    form.addEventListener("click", function (event) {
+        if (input.value.length < 1) {
+            event.preventDefault();
+        }
+    })
+
+    cancelProjectNameButton.addEventListener('click', () => {
+        form.classList.toggle('notActive');
+        submitFormButtonContainer.classList.toggle('notActive');
+        addProjectContainer.classList.toggle('notActive')
+    })
 }
 
 export default loadSideBar;

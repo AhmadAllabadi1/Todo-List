@@ -3,6 +3,7 @@ import loadInboxPage from "./modules/inbox";
 import loadTodayPage from "./modules/today";
 import loadWeekPage from "./modules/thisWeek";
 
+
 loadSideBar();
 loadInboxPage();
 

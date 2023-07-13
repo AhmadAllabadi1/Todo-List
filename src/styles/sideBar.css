@@ -101,6 +101,7 @@
 }
 
 
+
 .activePage{
     background-color: #CCCCCC;
 }
@@ -108,6 +109,57 @@
 
 .contentContainer{
     display: flex;
+}
+
+#projectNameForm{
+    height: 50px;
+    width: 245px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#projectNameForm:focus{
+    outline: none;
+}
+
+.submitFormButtonContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.submitProjectNameButton,.cancelProjectNameButton{
+    font-size: 1.2rem;
+    height: 50px;
+    width: 110px;
+    border-radius:5px;
+}
+
+.submitProjectNameButton{
+    color: white;
+    background-color: #66BB6A;
+}
+
+.submitProjectNameButton:hover{
+    cursor: pointer;
+    background-color: #5a8f5d;
+}
+
+.cancelProjectNameButton{
+    color: white;
+    background-color: #FF7373;
+}
+
+.cancelProjectNameButton:hover{
+    background-color: #d45a5a;
+    cursor: pointer;
+}
+
+
+.notActive{
+    display: none;
 }
 
 @media (max-width: 650px){
@@ -149,6 +201,7 @@
 
     .projectContainer{
         display: flex;
+        height: auto;
     }
 
     .projectTitle{
@@ -160,6 +213,24 @@
         padding-top: 10px;
         padding-bottom: 10px;
         margin-bottom: 10px;
+    }
+
+    #projectNameForm{
+        height: 25px;
+        width: 300px;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    .submitFormButtonContainer{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .submitProjectNameButton,.cancelProjectNameButton{
+        font-size: 0.9rem;
+        height: 25px;
+        width: 110px;
+        border-radius:5px;
     }
 
     .active{
