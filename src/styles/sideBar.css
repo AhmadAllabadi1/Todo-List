@@ -7,6 +7,10 @@
 
 *{
     color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 .main-title{
@@ -56,8 +60,9 @@
     display: flex;
     width:90%;
     height: 30%;
-    border-radius: 10px;;
+    border-radius: 10px;
     align-items: center;
+    padding-left: 15px;
 }
 
 .inboxContainer:hover,.todayContainer:hover,.weekContainer:hover,.addProjectContainer:hover{
@@ -80,9 +85,8 @@
 .projectContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 10%;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 5%;
     padding-left: 8%;
 }
@@ -126,7 +130,7 @@
     }
     .inboxContainer,.todayContainer,.weekContainer{
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 17px;
         color: black;
         font-weight: 600;
         align-items: center;
@@ -144,25 +148,18 @@
     }
 
     .projectContainer{
-        width: 100%;
-        padding-bottom: 20px;
+        display: flex;
     }
 
     .projectTitle{
         font-size: 1.5rem;
         padding-bottom: 10px;
     }
-
+    
     .addProjectContainer{
-        display: flex;
-        align-items: center;
-        width: 90%;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    .addProjectText{
-        font-size: 1.2rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     .active{
