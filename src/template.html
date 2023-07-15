@@ -8,6 +8,21 @@
     <title><%= htmlWebpackPlugin.options.title%></title>
 </head>
 <body>
-    
+    <div id="header">
+        <i class='fas fa-check'></i>Todo List <button id="toggleButton"><i class='fas fa-bars'></i></button></div>
+    <div id="sideBar">
+        <button id="inboxToggle"><i class='fas fa-inbox'></i> Inbox </button>
+        <button id="todayToggle"><i class='fas fa-calendar'></i> Today </button>
+        <button id="thisWeekToggle"><i class='fas fa-calendar-alt'></i> This Week </button>
+        <div id="sideBarProjectTitle"> Projects </div>
+        <button id="addProjectButton" class="active"><i class='fas fa-plus'></i> Add Project</button>
+        <form id="addProjectForm" >
+            <input type="text" id='projectNameForm' name="projectNameForm"autocomplete='off'>
+            <div id="addCancelContainer">
+                <button type="submit" id="submitAddProject"> Add </button>
+                <button id="cancelAddProject"> Cancel </button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
